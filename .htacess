@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^/?$ index.html [NC,L] 
+RewriteRule ^(jirologia)$ $1.html [NC,L]
