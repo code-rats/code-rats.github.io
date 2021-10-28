@@ -1,4 +1,6 @@
 RewriteEngine On
+rewritecond %{http_host} jiriao.space [nc]
+rewriterule ^(.*)$ http://www.jiriao.space/$1 [r=301,nc]
 RewriteBase /
 RewriteRule ^/?$ index.html [NC,L] 
 RewriteRule ^(jirologia)$ $1.html [NC,L]
