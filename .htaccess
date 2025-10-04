@@ -1,6 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^jiriao.space [NC]
-RewriteRule ^(.*)$ http://www.jiriao.space/$1 [L,R=301]
-RewriteBase /
-RewriteRule ^/?$ index.html [NC,L] 
-RewriteRule ^(jirologia)$ $1.html [NC,L]
